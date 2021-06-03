@@ -6,8 +6,9 @@
 }
 
 body {
-    
+    overflow: hidden;
     background-color: rgb(0, 0, 0);
+
 }
 
 html {
@@ -21,13 +22,15 @@ html {
     background-color: rgba(105, 90, 205, 0);
     transform: skewX(25deg);
     display: flex;
+    position: relative;
+    left: 5%;
+    
 }
 
 header {
     background: radial-gradient(circle, rgba(255,255,255,1) 
     70%, rgba(0,0,0,1) 130%);
     width: 25rem;
-    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -55,7 +58,7 @@ nav li a {
     cursor: pointer;
 }
 
-.raya-About, .raya-Projects, .raya-Contact {
+.raya-About, .raya-Projects, .raya-Contact, .raya-Certificados {
     height: 7px;
     width: 0px;
     margin-bottom: .1rem;
@@ -76,6 +79,10 @@ nav li a {
     width: 200px;
 }
 
+.li-Certificados:hover ~ .raya-Certificados {
+    width: 200px;
+}
+
 
 .active {
     width: 200px;
@@ -89,27 +96,42 @@ nav li a {
 
 
 
+
+
+
 .recto {
     transform: skewX(-25deg);
 }
 
+.about {
+    top: 0;
+}
+.proyects {
+    top: -100%;
+}
+.contact {
+    top: -200%;
+}
+
 main {
-    height: 100%;
+    height: auto;
     width: 65%;
-    overflow: auto;
-    margin-left: 7rem;
+    height: 100vh;
+    position: relative;
+    margin-left: 5rem;
+    top: -300%;
+    transition: .2s;
 }
 
 main section {
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main__section1 {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
 }
 
 .main__section1 h1 {
@@ -118,18 +140,18 @@ main section {
     margin-bottom: 2rem;
 }
 
-.main__section1 h2 {
+.main__section1 h3 {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 5rem;
 }
 
 .main__section1 p {
-    font-size: 3rem;
+    font-size: 2rem;
     transform: skewX(-25deg);
 }
 
-.main__section1 div {
+.main__section1 .raya{
     height: .7rem;
     width: 100%;
     background-color: #fff;
@@ -186,4 +208,154 @@ main section {
     display: inline;
     font-size: 2rem;
     transform: skewX(-25deg);
+}
+
+
+
+
+
+
+
+.main__section2 {
+    height: 100%;
+}
+
+.main__section2 h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main__section2 p {
+    font-size: 2rem;
+    transform: skewX(-25deg);
+}
+
+.main__section2 .raya {
+    height: .7rem;
+    width: 100%;
+    background-color: #fff;
+    margin: 1.5rem 0;
+}
+
+.main__section2 section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: .5rem;
+}
+
+.main__section2 section .img-pro {
+    height: 25rem;
+    width: 42rem;
+    background-color: rgb(4, 4, 4);
+    border: 5px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__section2 section a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.descripcion {
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion p {
+    color: #000;
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+.main__section2 section .img-pro img {
+    width: 123%;
+    height: 80%;
+    clip-path: polygon(0 0, 82% 0, 99% 99%, 18% 100%);
+    object-fit: cover;
+}
+
+.main__section2 section .img-pro .descripcion {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.main__section3 {
+    height: 100vh;
+}
+
+.main__section3 h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main__section3 p {
+    font-size: 2.5rem;
+    transform: skewX(-25deg);
+}
+
+.main__section3 div {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 5rem 0;
+}
+
+.main__section3 section {
+    display: grid;
+    grid-template-columns: 20rem 60rem;
+    grid-template-rows: repeat(5, 5rem);
+}
+
+.main__section3 section a {
+    color: #fff;
+    font-size: 2.5rem;
+    text-decoration: none;
+    width: auto;
+}
+
+.main__section3 section a:hover {
+    text-decoration: underline;
+}
+
+.main__section3 section span {
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+.main__section4 {
+    height: 100%;
+}
+
+.main__section4 h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main__section4 p {
+    font-size: 2rem;
+    transform: skewX(-25deg);
+    margin-bottom: 2rem;
+}
+
+.main__section4 div {
+    height: 20rem;
+    width: 40rem;
+    background-color: aquamarine;
+    margin: 2rem auto;
 }
