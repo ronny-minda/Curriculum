@@ -9,6 +9,8 @@ const raya_Projects = document.querySelector('.raya-Projects ');
 const raya_Contact = document.querySelector('.raya-Contact');
 const raya_Certificados = document.querySelector('.raya-Certificados');
 
+const logo_inicio = document.querySelector('.logo-inicio');
+
 const animacion_inicio = document.querySelector('.animacion-inicio');
 
 const letra = document.querySelectorAll('.li-a');
@@ -90,10 +92,14 @@ Certificados.addEventListener('click', () => {
     main.classList.add('certificados');
 });
 
+setTimeout(function(){
+    logo_inicio.classList.add('linea_logo');
+}, 1);
 
 setTimeout(function(){
     animacion_inicio.classList.add('opacidad');
+    logo_inicio.classList.add('opacidad');
     setTimeout(function(){
         animacion_inicio.classList.add('none');
-    }, 1000);
-}, 1000);
+    }, 500);
+}, 5000);

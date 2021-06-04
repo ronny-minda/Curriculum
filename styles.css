@@ -26,7 +26,36 @@ html {
     width: 100%;
     position: absolute;
     z-index: 99999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.logo-inicio  {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dasharray: 0;
+    stroke: rgba(255, 255, 255, 0.39);
+    stroke-width: .5;
+    transition: 5s;
+}
+
+.linea_logo {
+    stroke-dasharray: 200;
+    fill: rgba(255, 255, 255, 0.712);
+}
+
+/* @keyframes ba {
+    0%{
+        stroke-dasharray: 0;
+    }
+    50%{
+        stroke-dasharray: 200;
+    }
+    100%{
+        stroke-dasharray: 0;
+    }
+} */
+
 
 .opacidad {
     background-color: rgba(255, 0, 0, 0);
@@ -41,18 +70,17 @@ html {
     width: 150rem;
     height: 100vh;
     margin: auto;
-    background-color: rgba(34, 0, 255, 0);
+    background-color: rgba(0, 0, 0, 0.967);
     transform: skewX(25deg);
     display: flex;
     position: relative;
     left: 5%;
-    
+    z-index: 50;
 }
 
 header {
     user-select: none;
-    background: radial-gradient(circle, rgba(255,255,255,1) 
-    70%, rgba(0,0,0,1) 130%);
+    background: radial-gradient(circle, rgb(255, 255, 255) 70%, rgba(0,0,0,1) 130%);
     width: 25rem;
     display: flex;
     align-items: center;
@@ -156,6 +184,7 @@ main {
     margin-left: 5rem;
     top: -0%;
     transition: .2s;
+    
 }
 
 main section {
@@ -309,7 +338,7 @@ main section {
 .main__section2 section .img-pro img {
     width: 123%;
     height: 80%;
-    clip-path: polygon(0 0, 82% 0, 99% 99%, 18% 100%);
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 18% 100%);
     object-fit: cover;
 }
 
@@ -332,7 +361,7 @@ main section {
 }
 
 .main__section3 p {
-    font-size: 2.5rem;
+    font-size: 2rem;
     transform: skewX(-25deg);
 }
 
@@ -411,4 +440,39 @@ main section {
     left: -45px;
     position: absolute;
     object-fit: cover;
+}
+
+
+
+
+.svg-fondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+/*     filter: brightness(10%); */
+    fill: blue;
+    stroke: #fff;
+    stroke-width: 2;
+    
+    stroke-dasharray: 900;
+
+    animation: bu 100s linear infinite;
+}
+
+polygon {
+    fill: rgba(255, 0, 0, 0);
+}
+
+@keyframes bu {
+    0%{
+        stroke-dasharray: 0;
+    }
+    50%{
+        stroke-dasharray: 1000;
+    }
+    100%{
+        stroke-dasharray: 0;
+    }
 }
