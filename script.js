@@ -103,3 +103,8 @@ setTimeout(function(){
         animacion_inicio.classList.add('none');
     }, 500);
 }, 5000);
+
+
+
+
+
