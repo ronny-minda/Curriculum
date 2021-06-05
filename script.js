@@ -18,7 +18,7 @@ const letra = document.querySelectorAll('.li-a');
 const main = document.getElementById('main');
 
 about.addEventListener('click', () => {
-    console.log('siiii');
+    /* console.log('siiii'); */
     raya_About.classList.add('active');
     raya_Projects.classList.remove('active');
     raya_Contact.classList.remove('active');
@@ -37,7 +37,7 @@ main.classList.remove('certificados');
 });
 
 Projects.addEventListener('click', () => {
-    console.log('siiii');
+    /* console.log('siiii'); */
     raya_About.classList.remove('active');
     raya_Projects.classList.add('active');
     raya_Contact.classList.remove('active');
@@ -56,7 +56,7 @@ main.classList.remove('certificados');
 });
 
 Contact.addEventListener('click', () => {
-    console.log('siiii');
+    /* console.log('siiii'); */
     raya_About.classList.remove('active');
     raya_Projects.classList.remove('active');
     raya_Contact.classList.add('active');
@@ -75,7 +75,7 @@ main.classList.remove('certificados');
 });
 
 Certificados.addEventListener('click', () => {
-    console.log('siiii');
+    /* console.log('siiii'); */
     raya_About.classList.remove('active');
     raya_Projects.classList.remove('active');
     raya_Contact.classList.remove('active');
@@ -98,7 +98,6 @@ setTimeout(function(){
 
 setTimeout(function(){
     animacion_inicio.classList.add('opacidad');
-    logo_inicio.classList.add('opacidad');
     setTimeout(function(){
         animacion_inicio.classList.add('none');
     }, 500);
