@@ -514,6 +514,11 @@ main section {
         transform: skewX(-0deg);
     }
 
+
+    .main__section2 section {
+        margin: .5rem 0;
+    }
+
     .main__section2 section {
         display: block;
     }
@@ -588,15 +593,19 @@ main section {
 
     .main__section1 {
         height: auto;
+        background-color: rgba(0, 0, 0, 0.926);
     }
     .main__section2 {
         height: auto;
+        background-color: rgba(0, 0, 0, 0.926);
     }
     .main__section3 {
         height: auto;
+        background-color: rgba(0, 0, 0, 0.926);
     }
     .main__section4 {
         height: auto;
+        background-color: rgba(0, 0, 0, 0.926);
     }
 
 
