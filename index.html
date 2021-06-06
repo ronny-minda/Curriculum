@@ -114,8 +114,8 @@ width="1980px" height="1400px" viewBox="450 190 800 800" enable-background="new 
     </div>
 
     <div class="container">
-        <header>
-            <nav>
+        <header class="header">
+            <nav class="desktop">
                 <li class="recto li-About"><a class="li-a active-letra">About</a></li>
                 <div class="raya-About active"></div>
 
@@ -127,11 +127,24 @@ width="1980px" height="1400px" viewBox="450 190 800 800" enable-background="new 
                 
                 <li class="recto li-Certificados"><a class="li-a">Certificados</a></li>
                 <div class="raya-Certificados"></div>
+            </nav>
 
+            <nav class="movil">
+                <li class="recto li-AboutM"><a href="#mi" class="li-aM active-letra">About</a></li>
+                <div class="raya-About raya-AboutM active"></div>
+
+                <li class="recto li-ProjectsM"><a href="#projectos" class="li-aM">Projects</a></li>
+                <div class="raya-Projects raya-ProjectsM"></div>
+
+                <li class="recto li-ContactM"><a href="#contacto" class="li-aM">Contact</a></li>
+                <div class="raya-Contact raya-ContactM"></div>
+                
+                <li class="recto li-CertificadosM"><a href="#certificados" class="li-aM">Certificados</a></li>
+                <div class="raya-Certificados raya-CertificadosM"></div>
             </nav>
         </header>
         <main id="main">
-            <section class="main__section1">
+            <section id="mi" class="main__section1">
                 <h1 class="recto">Ronny Minda Vera</h1>
                 <h3 class="recto">Desarrollador Front End </h3>
                 <p class="recto">¡Hola! Soy Ronny Michael, comencé mi carrera en el ITB como desarrollo Software</p>
@@ -234,7 +247,7 @@ width="1980px" height="1400px" viewBox="450 190 800 800" enable-background="new 
                 <p class="recto">como abstraccion, polimorfismo etc.</p>
             </section>
 
-            <section class="main__section2">
+            <section id="projectos" class="main__section2">
                 <h2 class="recto">Proyectos Personales</h2>
                 <p class="recto">Estos son algunos de los proyectos que yo e realizado.</p>
                 <div class="raya"></div>
@@ -279,7 +292,7 @@ width="1980px" height="1400px" viewBox="450 190 800 800" enable-background="new 
                 <div class="raya"></div>
             </section>
 
-            <section class="main__section3">
+            <section id="contacto" class="main__section3">
                 <h2 class="recto">Contáctame</h2>
                 <p class="recto">
                     Puede comunicarse conmigo en cualquiera de los enlaces a continuación.
@@ -308,7 +321,7 @@ width="1980px" height="1400px" viewBox="450 190 800 800" enable-background="new 
                 <div></div>
             </section>
 
-            <section class="main__section4">
+            <section id="certificados" class="main__section4">
                 <h2 class="recto">certificados</h2>
                 <p >He aprendido todo estos conocimientos y tambien los e practicado, a continuacion.</p>
 
@@ -347,6 +360,15 @@ width="1980px" height="1400px" viewBox="450 190 800 800" enable-background="new 
             </section>
         </main>
     </div>
+
+    <a class="hamburger">
+        <span></span>
+    </a>
+
+    <a class="top" href="#mi">
+        <div class="flecha1"></div>
+        <div class="flecha2"></div>
+    </a>
 
 
     <script src="./script.js"></script>
