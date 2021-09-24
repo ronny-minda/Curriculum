@@ -5,417 +5,109 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-:root {
-    --titulo: 4rem;
-    --subtitulo: 2rem;
-    --parrafo: 1.7rem;
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
-*::selection  {
-    background-color: rgb(255, 0, 0);
+:root {
+    --titulo: 20px;
+    --letras: 15px;
+}
+
+.svg-fondo {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
 }
 
 body {
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
+    background-color: #5d6171;
 }
 
-html {
-    font-size: 62.5%;
-}
 
 
 .container {
-    width: 110rem;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.926);
-    /* transform: skewX(25deg); */
-    transform: skewX(25deg);
+    height: auto;
+    position: absolute;
+    z-index: 9999;
     display: flex;
-    position: relative;
-    z-index: 50;
-    left: 10%;
 }
 
 header {
-    user-select: none;
-    background: radial-gradient(circle, rgb(255, 255, 255) 70%, rgba(0,0,0,1) 130%);
-    width: 18%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.movil {
-    display: none;
-}
-
-.desktop {
-    display: block;
-}
-
-nav {
-    width: 100%;
     height: auto;
-}
-
-nav li {
-    height: 3rem;
-    list-style: none;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0.596);
     display: flex;
-}
-
-nav li a {
-    color: #000;
-    text-decoration: none;
-    font-size: 2.5rem;
-    width: 18rem;
-    height: 2rem;
-    padding: 0rem 0;
-    cursor: pointer;
-    padding-top: 0rem;
-    margin-left: 2rem;
-}
-
-.raya-About, .raya-Projects, .raya-Contact {
-    height: 6px;
-    width: 0px;
-    margin-bottom: 1.5rem;
-    transition: .3s;
-    background-color: rgb(0, 0, 0);
-    margin-left: 1rem;
-}
-
-.raya-Certificados {
-    height: 6px;
-    width: 0;
-    margin-bottom:0rem;
-    transition: .3s;
-    background-color: #92c43d;
-    margin-left: 1rem;
-}
-
-.li-About:hover ~ .raya-About {
-    width: 90%;
-}
-
-.li-Projects:hover ~ .raya-Projects {
-    width: 90%;
-}
-
-.li-Contact:hover ~ .raya-Contact {
-    width: 90%;
-}
-
-.li-Certificados:hover ~ .raya-Certificados {
-    width: 90%;
-}
-
-
-.active {
-    width: 90%;
-}
-
-.active-letra {
-    font-weight: bold;
-}
-
-
-
-
-
-
-
-
-.recto {
-    transform: skewX(-25deg);
-}
-
-.about {
-    top: 0;
-}
-.proyects {
-    top: -100%;
-}
-.contact {
-    top: -200%;
-}
-.certificados {
-    top: -300%;
-}
-
-main {
-    height: 100vh;
-    width: 80%;
-    position: relative;
-    top: -0%;
-    transition: .2s;
-    margin-left: 4rem;
-}
-
-main section {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.main__section1 {
-    height: 100vh;
-}
-
-.main__section1 h1 {
-    font-size: var(--titulo);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.main__section1 h3 {
-    font-size: var(--subtitulo);
-    text-align: center;
-    margin-bottom: 5rem;
-}
-
-.main__section1 p {
-    font-size: var(--parrafo);
-}
-
-.main__section1 .raya{
-    height: .7rem;
-    width: 100%;
-    background-color: #fff;
-    margin: 3rem 0;
-}
-
-.main__section1 section {
-    display: grid;
-    grid-template-columns: 7rem  1fr  7rem  1fr  7rem 1fr 7rem 1fr;
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.main__section1 section > svg, span{
-    transform: skewX(-25deg);
-}
-
-.main__section1 section .html {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.main__section1 section .css {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
-
-.main__section1 section .js {
-    grid-column: 5 / 6;
-    grid-row: 1 / 2;
-}
-
-.main__section1 section .sass {
-    grid-column: 7 / 8;
-    grid-row: 1 / 2;
-}
-
-.main__section1 section .ubuntu {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.main__section1 section .git {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-
-.main__section1 section .github {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-}
-
-.main__section1 section svg {
-    height: 50px;
-}
-
-.main__section1 section span {
-    display: inline;
-    font-size: var(--parrafo);
-}
-
-
-
-
-
-
-
-.main__section2 {
-    height: 100vh;
-/*     margin-top: 5rem; */
-}
-
-.main__section2 h2 {
-    font-size: var(--titulo);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.main__section2 p {
-    font-size: var(--subtitulo);
-}
-
-.main__section2 .raya {
-    height: .7rem;
-    width: 100%;
-    background-color: #fff;
-    margin: 1.5rem 0;
-}
-
-.main__section2 section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: .5rem;
-    width: 100%;
-}
-
-.main__section2 section .img-pro {
-    height: 25rem;
-    width: 98%;
-    background-color: rgb(4, 4, 4);
-    border: 5px solid rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-}
-
-.main__section2 section a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.descripcion {
-    display: flex;
-    justify-content: center;
-}
-
-.descripcion p {
-    color: #000;
-    font-size: var(--parrafo);
-    margin: auto;
-}
-
-.main__section2 section .img-pro img {
-    width: 123%;
-    height: 80%;
-    clip-path: polygon(0 0, 82% 0, 100% 100%, 18% 100%);
-    object-fit: cover;
-}
-
-.main__section2 section .img-pro .descripcion {
-    width: 100%;
-    height: 20%;
-    background-color: rgb(255, 255, 255);
-}
-
-
-
-.main__section3 {
-    height: 100vh;
-}
-
-.main__section3 h2 {
-    font-size: var(--titulo);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.main__section3 p {
-    font-size: var(--subtitulo);
-}
-
-.main__section3 div {
-    height: 7px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    margin: 3rem 0;
-}
-
-.main__section3 section {
-    display: grid;
-    grid-template-columns: 20rem 60rem;
-    grid-template-rows: repeat(5, 5rem);
-}
-
-.main__section3 section a {
-    color: #fff;
-    font-size: var(--subtitulo);
-    text-decoration: none;
-    width: auto;
-}
-
-.main__section3 section a:hover {
-    text-decoration: underline;
-}
-
-.main__section3 section span {
-    font-size: var(--subtitulo);
-}
-
-
-
-
-
-
-
-
-
-.main__section4 {
-    height: 100vh;
-}
-
-.main__section4 h2 {
-    font-size: var(--titulo);
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.main__section4 p {
-    font-size: var(--parrafo);
-    margin-bottom: .5rem;
-}
-
-.main__section4 section {
-}
-
-.main__section4 .conte {
-    margin: .5rem auto;
-    display: flex;
-    width: 100%;
-}
-
-.main__section4 .conte section {
-    width: 100%;
-}
-
-.main__section4 .conte section div {
-    height: 18rem;
-    width: 97%;
-    border: 1rem solid #fff;
-    margin: .5rem;
-    position: relative;
-}
-
-.main__section4 .conte section div img {
-    height: 100%;
-    width: 123%;
-    clip-path: polygon(0 0, 82% 0, 100% 100%, 18% 100%);
-    left: -45px;
-    position: absolute;
-    object-fit: cover;
-
+    flex-direction: column;
     
 }
 
+header .foto {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+header .info {
+    color: #fff;
+    font-size: var(--titulo);
+    margin: 30px 0 5px 0;
+}
+
+header .raya {
+    height: 3px;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 75px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+header .lugar {
+    height: 30px;
+    width: 400px;
+    display: flex;
+    margin-top: 15px;
+   margin-left: 150px;
+    background-color: rgba(127, 255, 212, 0);
+}
+
+header .lugarico {
+    height: 100%;
+    width: 10%;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+header .lugarlugar {
+    margin-left: 40px;
+    color: #fff;
+    width: 10000px;
+    height: 100%;
+    margin-left: 15px;
+    background-color: rgba(139, 23, 23, 0);
+    margin-top: 4px;
+}
+
+.lugarlugar b {
+    font-size: var(--letras);
+}
+
+header .lugar2 {
+    font-size: var(--letras);
+    color: #fff;
+    background-color: rgba(240, 10, 10, 0);
+    width: 60%;
+    margin-left: 50px;
+    text-align: start;
+    margin-bottom: 5px;
+    margin-top: px;
+}
 
 
 
@@ -436,8 +128,158 @@ main section {
 
 
 
-/* @media (max-width: 1000px) {
 
 
 
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    height: auto;
+    width: 60vw;
+    background-color: rgba(255, 255, 255, 0.514);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 0;
+}
+
+main .mainconte {
+    height: 100%;
+    width: 90%;
+    text-align: end;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+main .mainconte h1{
+    text-align: start;
+    width: 100;
+    font-size: 32px;
+    margin-top: 45px;
+}
+
+main .mainconte h2{
+    text-align: start;
+    width: 100;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+main .mainconte .h3{
+    text-align: start;
+    width: 100;
+    font-size: 15px;
+    margin-top: 35px;
+}
+
+main .mainconte p{
+    text-align: start;
+    width: 100;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+
+.contenedorhabi {
+    height: auto;
+    width: 80%;
+    background-color: rgba(204, 1, 255, 0);
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+
+main .mainconntenedor {
+    height: 35px;
+    width: 50%;
+    background-color: rgba(1, 183, 255, 0);
+    display: flex;
+    margin-left: -60px;
+    margin-top: 15px;
+}
+
+main .mainconntenedor img {
+    height: 100%;
+    width: 15%;
+    background-color: rgba(73, 255, 1, 0);
+}
+
+main .mainconntenedor h3 {
+    display: inline-block;
+    height: 100%;
+    width: 80%;
+    background-color: rgba(1, 255, 65, 0);
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.contenedorhabi .raya {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.contenedorhabi .cosas {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(255, 127, 80, 0);
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contenedorhabi .cosas img {
+    height: 100%;
+}
+
+.contenedorhabi .cosas span {
+    margin-right: 20px;
+}
+
+
+.contenedorhabi div {
+    text-align: start;
+    width: 100%;
+}
+
+.contenedorhabi .div1 {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.contenedorhabi .div2 {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.contenedorhabi .p {
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.contenedorhabi .p .lugar2{
+    
+    background-color: coral;
+}
