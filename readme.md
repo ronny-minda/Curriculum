@@ -1,9 +1,13 @@
 # Curriculum
 
-_Mi curriculum lo he hecho con **HTML** y **CSS**._
+```
+Mi curriculum lo he hecho con HTML y CSS.
+```
 
 <p align="center"><img src="./assets/img1.png"/></p>
 
-_**Control + P** Y guardarlo en pdf._
+```
+Control + P Y guardarlo en pdf.
+```
 
 <p align="center"><img src="./assets/img2.png"/></p> 
