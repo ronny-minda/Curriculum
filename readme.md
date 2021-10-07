@@ -1,14 +1,9 @@
+# Curriculum
 
-# Portafolio
+_Mi curriculum lo he hecho con **HTML** y **CSS**._
 
-Dispoible en: https://ronny-minda.github.io/
+<p align="center"><img src="./assets/img1.png"/></p>
 
-<h2>Responsive design</h2>
-<h3>Desktop</h3>
-<p align="center">
-<code><img style="text-align: center;" height="400" src="./assets/desktop.gif"></code>
-</p>
-<h3>Movil</h3>
-<p align="center">
-<code><img style=text-align: center; height="500" src="./assets/movil.gif"></code>
-</p>
+_**Control + P** Y guardarlo en pdf._
+
+<p align="center"><img src="./assets/img2.png"/></p> 
